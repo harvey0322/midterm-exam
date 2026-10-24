@@ -1,0 +1,47 @@
+
+<div class="page">
+  <div class="login-card">
+    <div class="logo">HDC</div>
+
+    <h2>Welcome Back</h2>
+    <p class="subtitle">Log in to continue</p>
+
+    <form (ngSubmit)="login()">
+      <label for="username">Username</label>
+      <input
+        id="username"
+        type="text"
+        name="username"
+        [(ngModel)]="username"
+        placeholder="Enter your username"
+        required
+      />
+
+      <label for="password">Password</label>
+
+      <div class="password-box">
+        <input
+          id="password"
+          [type]="showPassword ? 'text' : 'password'"
+          name="password"
+          [(ngModel)]="password"
+          placeholder="Enter your password"
+          required
+        />
+
+        <button
+          type="button"
+          class="toggle"
+          (click)="showPassword = !showPassword">
+          {{ showPassword ? 'Hide' : 'Show' }}
+        </button>
+      </div>
+
+      <button type="submit" class="login-btn">Log In</button>
+
+      <p class="message">{{ message }}</p>
+    </form>
+
+    <div class="footer">Secure Login Portal Created by: Harvey Contenidas</div>
+  </div>
+</div>
