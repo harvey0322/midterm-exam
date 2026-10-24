@@ -1,29 +1,29 @@
-1. what is the primary operational difference between git fetch and git pull?
+1. What is the primary operational difference between git fetch and git pull?
 answer: get fetch downloads remote changes without modifying it while get pull download changes and immidiately merge it into your current branch.
 
-2. you have the uncommited changes in your working directory and need to temporarily switch to another branch. which workflow prevents Git from blocking the checkout due to file overwrites?
+2. You have the uncommited changes in your working directory and need to temporarily switch to another branch. which workflow prevents Git from blocking the checkout due to file overwrites?
 answer: git stash
 
-3. when executing a git merge --no --ff command, what specific behaviour enforced by git?
+3. When executing a git merge --no --ff command, what specific behaviour enforced by git?
 answer: forces git to create a merge
 
-4. what happens when you check out a specific commit hash directly instead of a branch name?
+4. What happens when you check out a specific commit hash directly instead of a branch name?
 answer: detached HEAD state
 
-5. you need to apply a specific bug-fix commit from a development branch onto a stable release branch without merging the entire branch history. which command should you use?
-answer: git cherry-pick <commit hash>
+5. You need to apply a specific bug-fix commit from a development branch onto a stable release branch without merging the entire branch history. which command should you use?
+answer: git cherry-pick <commit-hash>
 
-6. after performing a destrcutive git reset --hard operation, you realize you lost recent commits that were not on any branch. Which utility can retrieve these dangling commits?
-answer: git ref
+6. After performing a destrcutive git reset --hard operation, you realize you lost recent commits that were not on any branch. Which utility can retrieve these dangling commits?
+answer: git reflog
 
-7. you want to remove untracked files and directories from your working tree, including ignored files listed in .gitignore. Which command flag combination achieve this?
+7. You want to remove untracked files and directories from your working tree, including ignored files listed in .gitignore. Which command flag combination achieve this?
 answer: git clean -fdx
 
 8. You need to undo a public commit that has already been pushed to a shared remote repository without altering the existing commit history or disrupting collaborators. which command is appropriate?
-answer: git revert <commit hash>
+answer: git revert <commit-hash>
 
 9. You want to identify the specific commit that introduced a regression bug in a codebase with hundreds of historical commits. Which utility automates this binary search process?
 answer: git bisect
 
 10. What is the function of the --amend flag  when used with git command?
-answer: git commit --amend
+answer: modifies the most recent commit
